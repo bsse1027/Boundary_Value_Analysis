@@ -1,0 +1,33 @@
+,"Function :FileNameInput,PdfToExtraction",,,,
+,TestType:Worst Case,,,,
+Parameter,LowerLimit,Upperlimit,,,
+FileSize(MB),1,2048,,,
+PathSize(Char),1,260,,,
+,,,,,
+,,,,,
+Test ID,File Size(MB),File Path(Char),Expected Output,,Actual Output
+1,1,2,Convertion Successful,,Convertion Successful
+2,2,2,Convertion Successful,,Convertion Successful
+3,2048,2,Convertion Successful,,Failed
+4,2047,2,Convertion Successful,,Failed
+5,1024,2,Convertion Successful,,Failed
+6,1,260,Convertion Successful,,Convertion Successful
+7,2,260,Convertion Successful,,Convertion Successful
+8,2048,260,Convertion Successful,,Failed
+9,2047,260,Convertion Successful,,Failed
+10,1024,260,Convertion Successful,,Failed
+11,1,259,Convertion Successful,,Convertion Successful
+12,2,259,Convertion Successful,,Convertion Successful
+13,2048,259,Convertion Successful,,Failed
+14,2047,259,Convertion Successful,,Failed
+15,1024,259,Convertion Successful,,Failed
+16,1,130,Convertion Successful,,Convertion Successful
+17,2,130,Convertion Successful,,Convertion Successful
+18,2048,130,Convertion Successful,,Failed
+19,2047,130,Convertion Successful,,Failed
+20,1024,130,Convertion Successful,,Failed
+21,1,1,Convertion Successful,,Convertion Successful
+22,2,1,Convertion Successful,,Convertion Successful
+23,2048,1,Convertion Successful,,Failed
+24,2047,1,Convertion Successful,,Failed
+25,1024,1,Convertion Successful,,Failed

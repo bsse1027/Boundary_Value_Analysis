@@ -1,0 +1,19 @@
+,"Function :FileNameInput,PdfToExtraction",,,,
+,TestType:BVC,,,,
+Parameter,LowerLimit,Upperlimit,,,
+FileSize(MB),1,2048,,,
+PathSize(Char),1,260,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+Test ID,File size(MB),Path Size(Character),Expected Output,,Actual Output
+1,1,130,Convertion Successful,,Convertion Succesful
+2,2,130,Convertion Successful,,Convertion Successful
+3,2048,130,Convertion Successful,,Failed
+4,2047,130,Convertion Successful,,Failed
+5,1024,1,Convertion Successful,,Failed
+6,1024,2,Convertion Successful,,Failed
+7,1024,260,Convertion Successful,,Failed
+8,1024,259,Convertion Successful,,Failed
+9,1024,130,Convertion Successful,,Failed

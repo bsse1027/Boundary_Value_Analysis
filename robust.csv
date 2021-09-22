@@ -1,0 +1,23 @@
+,"Function :FileNameInput,PdfToExtraction",,,
+,TestType:Robust,,,
+Parameter,LowerLimit,Upperlimit,,
+FileSize(MB),1,2048,,
+PathSize(Char),1,260,,
+,,,,
+,,,,
+,,,,
+,,,,
+Test ID,File Size(MB),File Path Size(Char),Expected Output,Actual Output
+1,1,130,Convertion Successful,Convertion Successful
+2,2,130,Convertion Successful,Convertion Successful
+3,2048,130,Convertion Successful,Failed
+4,2047,130,Convertion Successful,Failed
+5,1024,130,Convertion Successful,Failed
+6,0,130,Failed,Failed
+7,1024,1,Convertion Successful,Failed
+8,1024,2,Convertion Successful,Failed
+9,1024,260,Convertion Successful,Failed
+10,1024,259,Convertion Successful,Failed
+11,1024,130,Convertion Successful,Failed
+12,1024,0,Failed,Failed
+13,1024,130,Convertion Successful,Failed
